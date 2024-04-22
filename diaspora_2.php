@@ -91,10 +91,12 @@ $result = $conn->query($sql);
                 //2.3 Alert the results
             }
    
-    
  </script>
     </head>
     <body>
+        <h1>
+            testing
+        </h1>
         <label>
             Staff Name<input  value="elizabeth" type="text" id="staff_name"/>
         </label>
