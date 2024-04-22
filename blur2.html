@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Save Input Data on Blur</title>
+</head>
+<body>
+
+<input type="text" class="inputField">
+<input type="text" class="inputField">
+<input type="text" class="inputField">
+
+<!-- Container to display input values -->
+<div id="inputValues"></div>
+
+<script>
+// Get all input fields
+var inputFields = document.querySelectorAll('.inputField');
+
+// Container to display input values
+var inputValuesContainer = document.getElementById('inputValues');
+
+// Loop through each input field
+inputFields.forEach(function(inputField) {
+    // Add blur event listener to each input field
+    inputField.addEventListener('blur', function(event) {
+        // Get the value of the current input field
+        var inputValue = event.target.value;
+        
+        // Display the value of the current input field
+        displayInputValue(inputValue);
+    });
+});
+
+// Function to display input value
+function displayInputValue(value) {
+    // Create a new paragraph element
+    var para = document.createElement('p');
+    
+    // Set the text content of the paragraph to the input value
+    para.textContent = 'Input value: ' + value;
+    
+    // Append the paragraph to the inputValuesContainer
+    inputValuesContainer.appendChild(para);
+}
+</script>
+
+</body>
+</html>

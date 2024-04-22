@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>GRID STYLING</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            html{
+                width:100%;
+                height:100%;
+
+            }
+            body{
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                padding: 0;
+                display: grid;
+                
+                grid-template-columns: 25% 25% 25% 25% 25%;
+                grid-template-rows:  10% 90%; 
+                grid-template-areas:
+                    "a a a a"
+                    "b c d e"
+                    "b c d e"
+                    "b c d e"
+
+            }
+            .a{
+               grid-area: a; 
+               background-color: black;
+            }
+            .b{
+                grid-area: b;
+                /*background-color: blue;*/
+            }
+            .c{
+                grid-area: c;
+                /*background-color: yellow;*/
+            }
+            .d{
+                grid-area: d;
+                /*background-color: pink;*/
+            }
+            .e{
+                grid-area: e;
+                /*background-color: red;*/
+            }
+        </style>
+    </head>
+    <body>
+        
+        <div class="a">
+          
+        </div>
+        <div class="b">
+              <ol>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+            </ol>
+        </div>
+        <div class="c">
+              <ol>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+            </ol>
+        </div>
+        <div class="d">
+              <ol>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+            </ol>
+        </div>
+            <div class="e">  <ol>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+            </ol> </div>
+
+       
+    </body>
+</html>

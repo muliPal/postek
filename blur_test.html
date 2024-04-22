@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Save Input Data on Blur</title>
+</head>
+<body>
+
+<input type="text" class="inputField">
+<input type="text" class="inputField">
+<input type="text" class="inputField">
+
+<script>
+// Get all input fields
+var inputFields = document.querySelectorAll('.inputField');
+
+// Loop through each input field
+inputFields.forEach(function(inputField, index) {
+    // Add blur event listener to each input field
+    inputField.addEventListener('blur', function(event) {
+        // Get the value of the current input field
+        var inputValue = event.target.value;
+        
+        // Alert the value of the current input field
+        alert('Input value: ' + inputValue);
+        
+        // Focus on the next input field
+        if (index < inputFields.length - 1) {
+            inputFields[index + 1].focus();
+        }
+    });
+});
+</script>
+
+</body>
+</html>
