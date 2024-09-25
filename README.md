@@ -1,2 +1,2 @@
 # postek
-this is a pos system
+This is a POS System for Diaspora Gardens
